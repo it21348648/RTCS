@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:backgroundTintMode="add">
+
+    <TextView
+        android:id="@+id/textViewprice"
+        android:layout_width="398dp"
+        android:layout_height="34dp"
+        android:background="@color/purple_200"
+        android:text="I will develop your website using bootstrap...... "
+        app:layout_constraintBottom_toTopOf="@+id/buttonUpd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewdescription"
+        app:layout_constraintVertical_bias="0.73" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView4"
+        android:layout_width="136dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="257dp"
+        android:text="Gig price[$]"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewprice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewcategory"
+        android:layout_width="396dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/purple_200"
+        android:text="Web Development"
+        app:layout_constraintBottom_toTopOf="@+id/checkedTextView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView3"
+        android:layout_width="136dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="257dp"
+        android:text="Gig Description"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewdescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="391dp"
+        android:layout_height="225dp"
+        android:layout_marginBottom="512dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/top_background" />
+
+    <ImageButton
+        android:layout_width="53dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="324dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Enter How Much Cookies You Want"
+        android:hint="e.g 8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <Button
+        android:id="@+id/buttonUpd"
+        android:layout_width="145dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="16dp"
+        android:text="Edit"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="143dp"
+        android:layout_height="55dp"
+        android:rotationY="-27"
+        android:text="Gig details..."
+        android:textAlignment="center"
+        android:textColor="#EDE1E1"
+        android:textColorLink="#D8BFBF"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.73" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_width="169dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
+        android:text="Gig Title :"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewtitle"
+        android:layout_width="389dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="56dp"
+        android:background="@color/purple_200"
+        android:text="I will develop your website using bootstrap...... "
+        app:layout_constraintBottom_toTopOf="@+id/textViewcategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView2"
+        android:layout_width="136dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="44dp"
+        android:text="Gig category :"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewcategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewdescription"
+        android:layout_width="393dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="7dp"
+        android:background="@color/purple_200"
+        android:text="Web Development"
+        app:layout_constraintBottom_toTopOf="@+id/checkedTextView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttondelete"
+        android:layout_width="142dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="16dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toEndOf="@+id/buttonUpd" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView3"
+        android:layout_width="391dp"
+        android:layout_height="55dp"
+        app:backgroundTint="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="Enter How Much Cookies You Want"
+            android:hint="e.g 8"
+            app:srcCompat="@drawable/baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="335dp"
+            android:contentDescription="Enter How Much Cookies You Want"
+            android:hint="e.g 8"
+            app:srcCompat="@drawable/baseline_account_box_24" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120dp"
+            android:contentDescription="Enter How Much Cookies You Want"
+            android:hint="e.g 8"
+            app:srcCompat="@drawable/baseline_logout_24" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="230dp"
+            android:contentDescription="Enter How Much Cookies You Want"
+            android:hint="e.g 8"
+            app:srcCompat="@drawable/baseline_notifications_24" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="213dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:srcCompat="@drawable/hireme" />
+
+    <TextView
+        android:id="@+id/gigId"
+        android:layout_width="215dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/gigdescription"-->
+    <!--        android:layout_width="311dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:background="@color/white"-->
+    <!--        android:backgroundTint="@color/material_dynamic_tertiary95"-->
+    <!--        android:text="I am a full stack web developer............................................."-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView2"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView7"-->
+    <!--        app:layout_constraintVertical_bias="0.517" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

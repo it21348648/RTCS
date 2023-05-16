@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnmain1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:shape="rectangle">
+
+    <!-- Background Image -->
+
+
+    <!-- Main Title -->
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="305dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:text="Welcome to SL HireMe"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="226dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:text="Sell your Knowledge.."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_title" />
+
+    <Button
+        android:id="@+id/mainbtn1"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="524dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="GET STARTED"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="366dp"
+        android:layout_height="317dp"
+        android:layout_marginStart="16dp"
+        android:rotationX="-11"
+        app:layout_constraintBottom_toTopOf="@+id/mainbtn1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_title"
+        app:layout_constraintVertical_bias="0.581"
+        app:srcCompat="@drawable/hireme" />
+
+    <!-- Call to Action Button -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

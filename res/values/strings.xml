@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="options_array">
+        <item>Web development</item>
+        <item>Mobile app development</item>
+        <item>Graphic Design</item>
+    </string-array>
+    <string name="select_option">select</string>
+</resources>

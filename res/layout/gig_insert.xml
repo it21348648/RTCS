@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F4F6"
+    android:backgroundTintMode="add">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/gigtitle2"
+        android:layout_width="393dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/gradient_background"
+        android:backgroundTint="@color/purple_200"
+        android:backgroundTintMode="screen"
+        android:hint="Gig Title"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/gigprice"
+        android:layout_width="394dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/gradient_background"
+        android:backgroundTint="@color/purple_200"
+        android:backgroundTintMode="screen"
+        android:hint="Price(In $s)"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/insertBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="481dp"
+        android:layout_height="162dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_background" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="143dp"
+        android:layout_height="55dp"
+        android:text="Gig details...."
+        android:textAlignment="center"
+        android:textColor="#EDE1E1"
+        android:textColorLink="#D8BFBF"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.598" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/gigdescription"
+        android:layout_width="395dp"
+        android:layout_height="94dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/gradient_background"
+        android:backgroundTint="@color/purple_200"
+        android:backgroundTintMode="screen"
+        android:hint="Gig description"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/gigprice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="377dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="#B49AE3"
+        android:entries="@array/options_array"
+        android:prompt="@string/select_option"
+        android:scrollbarSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/gigdescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Enter How Much Cookies You Want"
+        android:hint="e.g 8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView4"
+        android:layout_width="415dp"
+        android:layout_height="59dp"
+        app:backgroundTint="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="Enter How Much Cookies You Want"
+            android:hint="e.g 8"
+            app:srcCompat="@drawable/baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="335dp"
+            android:contentDescription="Enter How Much Cookies You Want"
+            android:hint="e.g 8"
+            app:srcCompat="@drawable/baseline_account_box_24" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120dp"
+            android:contentDescription="Enter How Much Cookies You Want"
+            android:hint="e.g 8"
+            app:srcCompat="@drawable/baseline_logout_24" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="230dp"
+            android:contentDescription="Enter How Much Cookies You Want"
+            android:hint="e.g 8"
+            app:srcCompat="@drawable/baseline_notifications_24" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <Button
+        android:id="@+id/insertBtn"
+        android:layout_width="193dp"
+        android:layout_height="57dp"
+        android:text="Create my Gig"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="176dp"
+        android:layout_height="168dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/gigtitle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hireme" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
